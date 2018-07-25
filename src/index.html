@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap primer link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>FoodMap</title>
+</head>
+
+<section id="splash">
+<body>
+  <div class="preload" id="preload">
+    <div class="logo">
+      <h1>FoodMap</h1>
+      <h1>Loading...</h1>
+    </div>
+    <div class="loader-frame">
+      <div class="loader1" id="loader1"></div>
+      <div class="loader2" id="loader2"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+<div>FoodMap</div>
+<div id="map">
+
+</div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDexemiWkh4fVK7JdXaiOL2nH9ocwfZ_Fs&callback=initMap">
+</script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
