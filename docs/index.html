@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=ABeeZee|Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>FoodMap</title>
+</head>
+
+<body>
+
+    <div class="container-fluid" id="screenOne">
+        <div class="row">
+            <div class="col-12">
+                <h1 id="mainTitle">Cargando ...</h1>
+                <div class="loader-frame">
+                    <div class="loader1" id="loader1"></div>
+                    <div class="loader2" id="loader2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="screenTwo">
+        <div class="row">
+            <div class="col-12" id="titulo">
+                <h1>FoodMap</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-centrada">
+                <div id="mapContainer" class="col-centrada"></div>
+            </div>
+        </div>
+
+        <div class="row" id="buscar">
+            <div class="col-md-6 offset-md-3">
+                <div class="input-group mb-3">
+                  <p>¿Qué quieres buscar?</p>
+                  <input type="search" id="searchInput" placeholder="Busca aquí...">
+                </div>
+            </div>
+        </div>
+        <div id="widgetZomato">
+          <p>Recomendaciones</p>
+          <div class="widget_wrap" style="width:520px;height:504px;display:inline-block;"><iframe src="https://www.zomato.com/widgets/res_search_widget.php?city_id=83&language_id=8&theme=dark&hideCitySearch=on&hideResSearch=on&widgetType=large&sort=popularity" style="position:relative;width:100%;height:100%;" border="0" frameborder="0"></iframe></div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDexemiWkh4fVK7JdXaiOL2nH9ocwfZ_Fs&libraries=places&callback=initMap">
+    </script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

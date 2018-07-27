@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(83, 80, 80);
+}
+
+#mainTitle{
+  margin-top: 30%;
+  text-align: center;
+  font-family: 'ABeeZee', sans-serif;
+  color: rgb(230, 127, 9);
+}
+
+#mapContainer {
+  height: 300px; 
+  width: 100%; 
+  border: solid rgb(230, 127, 9);
+  }
+
+  #searchInput {
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    border: solid thin rgb(230, 127, 9);
+    border-radius: 10px;
+  }
+
+  #screenTwo {
+    display: none;
+  }
+
+  #titulo {
+    font-family: 'Courgette', cursive;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(230, 127, 9);
+    font-size: 6em;
+  }
+
+  p {
+    text-align: center;
+    color: rgb(230, 127, 9);
+    font-size: 2em;
+  }
+
+  .col-centrada {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #buscar {
+    font-family: 'ABeeZee', sans-serif;
+    margin-top: 5%;
+  }
+
+  #widgetZomato {
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+  }
+
+  .loader-frame {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .loader1, .loader2 {
+    position: absolute;
+    border: 5px solid transparent;
+    border-radius: 50%;
+  }
+  
+  .loader1 {
+    width: 70px;
+    height: 70px;
+    border-top: 5px solid rgb(230, 127, 9);
+    border-bottom: 5px solid rgb(230, 127, 9);
+    animation: clockwisespin 2s linear 3;
+  }
+  
+  .loader2 {
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid yellow;
+    border-right: 5px solid yellow;
+    top: 5px; left: 5px;
+    animation: anticlockwisespin 2s linear 3;
+  }
+  
+  @keyframes clockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
+  @keyframes anticlockwisespin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+  
